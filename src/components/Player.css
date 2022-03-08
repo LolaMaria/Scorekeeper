@@ -1,0 +1,15 @@
+.Player {
+  display: flex;
+  justify-content: right;
+}
+
+.Player__name {
+  margin-right: auto;
+}
+
+.Player__score {
+  margin-right: auto;
+}
+.Player__button {
+  margin: 0 12px;
+}

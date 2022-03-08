@@ -1,0 +1,10 @@
+.Button {
+  background-color: grey;
+  border: none;
+  padding: 4px 12px;
+}
+
+.Button--dark {
+  background-color: black;
+  color: white;
+}
