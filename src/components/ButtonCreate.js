@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export default function ButtonCreate() {
+export default function ButtonCreate({ name }) {
   return (
     <Nav>
-      <LinkStyled to="/">Create game</LinkStyled>
+      <LinkStyled to="/Create">{name}</LinkStyled>
     </Nav>
   );
 }
@@ -23,4 +23,6 @@ const Nav = styled.nav`
   background: grey;
   border: solid;
   border-width: 1px;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
 `;

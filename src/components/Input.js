@@ -4,7 +4,7 @@ export default function InputGame({ name, placeholder, id }) {
   return (
     <>
       <Label htmlFor={id}>{name}</Label>
-      <input type="text" id={id} placeholder={placeholder} />
+      <Input type="text" id={id} placeholder={placeholder} />
     </>
   );
 }
@@ -12,5 +12,9 @@ export default function InputGame({ name, placeholder, id }) {
 const Label = styled.label`
     display:flex;
     flex-direction:column;
+    width:100%;
   }
+`;
+const Input = styled.input`
+  width: 100%;
 `;

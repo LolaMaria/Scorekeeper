@@ -1,20 +1,20 @@
-import styled from "styled-components";
+import { Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Home from "./components/pages/Home";
+import History from "./components/pages/History";
+import CreatePlay from "./components/pages/Create";
+//import styled from "styled-components";
 
 function App() {
-  return <h1>Scorekeeper</h1>;
-}
-function Button({ children, onClick, isDark }) {
   return (
-    <ButtonStyled isDark={isDark} onClick={onClick}>
-      {children}
-    </ButtonStyled>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/History" element={<History />} />
+        <Route path="/Create" element={<CreatePlay />} />
+      </Routes>
+      <Navigation />
+    </div>
   );
 }
-
-const ButtonStyled = styled.button`
-  background-color: ${(props) => (props.isDark ? "#666" : "#ddd")};
-  color: ${(props) => (props.isDark ? "white" : "inherit")};
-  border: none;
-  padding: 4px 12px;
-`;
 export default App;
