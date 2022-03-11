@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
+
 import Home from "./components/pages/Home";
 import History from "./components/pages/History";
 import CreatePlay from "./components/pages/Create";
@@ -13,7 +13,6 @@ function App() {
         <Route path="/History" element={<History />} />
         <Route path="/Create" element={<CreatePlay />} />
       </Routes>
-      <Navigation />
     </div>
   );
 }

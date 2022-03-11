@@ -1,5 +1,6 @@
 import InputGame from "../Input";
 import ButtonCreate from "../ButtonCreate";
+import Navigation from "../Navigation";
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
         name="Player names"
         placeholder="e.g. John Doe, Jane Doe"
       />
-      <ButtonCreate name="Create Game" />
+      <ButtonCreate name="Create Game" to="Create" />
+      <Navigation />
     </>
   );
 }

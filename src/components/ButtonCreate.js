@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export default function ButtonCreate({ name }) {
+export default function ButtonCreate({ name, to }) {
   return (
     <Nav>
-      <LinkStyled to="/Create">{name}</LinkStyled>
+      <LinkStyled to={to}>{name}</LinkStyled>
     </Nav>
   );
 }
