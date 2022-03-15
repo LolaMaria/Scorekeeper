@@ -11,7 +11,7 @@ export default function Home() {
         name="Player names"
         placeholder="e.g. John Doe, Jane Doe"
       />
-      <ButtonCreate name="Create Game" to="Create" />
+      <ButtonCreate to="/Create" name="Create Game" />
       <Navigation />
     </>
   );
